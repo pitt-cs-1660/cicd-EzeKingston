@@ -11,9 +11,6 @@ services:
     ### Add depends postgres here
 
     ### expose ports here
-    volumes:
-      - ./cc_compose:/app/cc_compose:Z
-      - ./static:/app/static:Z
     stdin_open: true
     tty: true
 
