@@ -79,7 +79,7 @@ jobs:
 
      # configure/login with docker
      - name: gcloud Configure Docker
-       run: gcloud auth configure-docker [YOUR REGION e.g. us-central1]-docker.pkg.dev
+       run: gcloud auth configure-docker [us-east1]-docker.pkg.dev
 
      # setup docker buildx
      - name: Setup docker buildx
@@ -94,5 +94,5 @@ jobs:
          context: ./
          file: ./Dockerfile
          push: true
-         tags: [YOUR REGION e.g. us-central1]-docker.pkg.dev/cc-spring2025/dansc0de/fastapi-server:v2
+         tags: [us-east1]-docker.pkg.dev/cc-spring2025/dansc0de/fastapi-server:v2
    
