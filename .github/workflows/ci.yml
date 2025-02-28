@@ -75,7 +75,7 @@ jobs:
           name: Authenticate to GCP
         with:
           project_id: 'fox-jam-452317' # update with your project ID
-          workload_identity_provider: 'projects/705495244312/locations/global/workloadIdentityPools/github/providers/my-repo' # update with your Workload Identity Pool
+          workload_identity_provider: 'projects/705495244312/locations/global/workloadIdentityPools/github' # update with your Workload Identity Pool
 
        # configure/login with docker
       - name: gcloud Configure Docker
